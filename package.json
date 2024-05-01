@@ -1,12 +1,13 @@
 {
-  "name": "app",
-  "module": "server/index.ts",
+  "name": "expense-tracker",
+  "module": "backend/index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun server/index.ts",
-    "dev": "bun --watch server/index.ts"
+    "start": "bun backend/index.ts",
+    "dev": "bun --watch backend/index.ts"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.7",
     "@types/bun": "latest"
   },
   "peerDependencies": {
