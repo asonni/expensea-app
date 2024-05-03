@@ -25,7 +25,7 @@ COPY --link bun.lockb package.json ./
 RUN bun install --ci
 
 # Install frontend node modules
-COPY --link frontend/bun.lockb frontend/packange.json ./frontend/
+COPY --link frontend/bun.lockb frontend/package.json ./frontend/
 RUN cd frontend && bun install --ci
 
 # Copy application code
